@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "movie_start.py", line 210, in <module>
+    tornado.ioloop.IOLoop.instance().start()
+  File "/home/work/.jumbo/lib/python2.7/site-packages/tornado-3.1-py2.7.egg/tornado/ioloop.py", line 646, in start
+    event_pairs = self._impl.poll(poll_timeout)
+KeyboardInterrupt

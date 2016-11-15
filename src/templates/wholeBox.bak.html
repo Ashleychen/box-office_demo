@@ -1,0 +1,125 @@
+<!DOCTYPE table PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)http://piaofang.snbigdata.com/index/forecast_calendar -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>票房晚报</title>
+<meta name="baidu-site-verification" content="PlKNuB5N14">
+<meta name="description" content="电影票房预测">
+<meta name="keywords" content="电影票房预测">
+
+<link rel="stylesheet" href="../static/lib/bootstrap.min.css">
+<script type="text/javascript" src="../static/lib/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/lib/index.css">
+<link rel="stylesheet" type="text/css" href="../static/lib/index_forcast.css">
+<link rel="stylesheet" href="../static/lib/jquery-ui.min.css">
+<link rel="stylesheet" href="../static/lib/layout.css">
+<link id="bs-css" href="../static/lib/bootstrap-cerulean.min.css" rel="stylesheet">
+<script src="../static/lib/hm.js"></script> 
+<link id="bs-css" href="../static/lib/jquery.dataTables.min.css" rel="stylesheet">
+<script src="../static/lib/jquery-1.11.1.min.js"></script>
+<script src="../static/lib/jquery.dataTables.js"></script>
+<script src="../static/lib/Xslider.js"></script>
+<script src="../static/lib/global.js"></script>
+<script src="../static/lib/echarts.min.js"></script>
+<script src="../static/lib/bootstrap.min.js"></script>
+<script src="../static/lib/jquery-ui.min.js"></script>
+<script src="../static/lib/datepicker-zh-cn.js"></script>
+<script type="text/javascript" src="../static/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="../static/lib/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/lib/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="../static/lib/pop.anal.css" />
+<script src="../static/lib/layer/layer.js"></script>
+<script src="../static/date/date.funcs.js"></script>
+<script src="../static/date_pick/date.pick.funcs.js"></script>
+<script src="../static/table/table.format.js"></script>
+<script src="../static/chart/chart.format.js"></script>
+<script src="../static/chart/chart.options.js"></script>
+<script src="../static/pop/pop.format.js"></script>
+
+<style type="text/css">
+body{
+font-family:'微软雅黑','宋体';
+}
+</style>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+	var hm = document.createElement("script");
+  	hm.src = "//hm.baidu.com/hm.js?416b9af87687a008381d0a070a8267f4";
+  	var s = document.getElementsByTagName("script")[0]; 
+  	s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</head>
+ 
+<body>
+<div style="background-color:#ff9966;width:100%;min-width:1045px">
+    <div class="forecast1" style="margin:auto auto;width:1045px">
+  	<ul class="nav nav-tabs forecast" style="font-size:large">
+  	<li role="presentation"><a href="http://10.199.242.43:8000/">每日预测</a></li>
+  	<li role="presentation" class="active"><a href="http://10.199.242.43:8000/wholeBox">总票房预测</a></li> 
+  	<li role="presentation" ><a href="http://10.199.242.43:8000/week">周票房预测</a></li> 
+	<li role="presentation"><a   href="http://10.199.242.43:8000/battle">巅峰对决</a></li>
+	<li role="presentation"><a   href="http://10.199.242.43:8000/deep">影片深度分析</a></li>
+    </ul>
+</div>
+
+<div class="bg_picture2">
+    <br>
+    <div class="bg1">
+	<div class="search">
+    	    <br>
+    	    <div class="temp1"> 总票房预测</div>
+  	    <hr style="width:92%;size:2">
+            <div style="width:70%;">
+                <span  class="date-con text-right" style="font-size:16px;margin:auto auto;padding:0px 38px">日期：</span><input style="font-size:13px;height:32px" size="26" readOnly id="first_range" type="text">
+            </div>
+    	    <br>
+            <div id="lishi"> 
+   		<div id="tb_temp_wrapper" class="dataTables_wrapper no-footer">
+		    <table id="tb_temp" style="width:800px" class="table table-striped  bootstrap-datatable datatable responsive dataTable no-footer" role="grid" aria-describedby="tb_temp_info">
+    			<thead>                                                                             
+    			    <tr role="row">
+				<th class="sorting_desc" tabindex="0" aria-controls="tb_temp" rowspan="1" colspan="1" aria-sort="descending" aria-label="上映日期: activate to sort column ascending" style="width: 132px;">上映日期</th>
+				<th class="sorting" tabindex="0" aria-controls="tb_temp" rowspan="1" colspan="1" aria-label="影片名: activate to sort column ascending" style="width: 354px;">影片名</th>
+				<th class="sorting" tabindex="0" aria-controls="tb_temp" rowspan="1" colspan="1" aria-label="总票房预测(万): activate to sort column ascending" style="width: 206px;">百度预测A(万)</th>
+				<th class="sorting" tabindex="0" aria-controls="tb_temp" rowspan="1" colspan="1" aria-label="总票房预测(万): activate to sort column ascending" style="width: 206px;">百度预测B(万)</th>
+				<th class="sorting" tabindex="0" aria-controls="tb_temp" rowspan="1" colspan="1" aria-label="总票房预测(万): activate to sort column ascending" style="width: 206px;">数能预测(万)</th>
+				<th class="sorting" tabindex="0" aria-controls="basic_temp" rowspan="1" colspan="1" aria-label="总票房预测(万): activate to sort column ascending" style="width: 206px;">实时总票房(万)</th>
+			    </tr>
+    			</thead>
+			<tbody>
+			</tbody>
+    		    </table>
+		</div>
+	    </div>
+	    <br/>
+       	    <table class="table" style="width:850px;margin:auto">
+           	<thead>
+               	    <th style="color:#2fa4e7">票房类别</th>
+               	    <th>百度整体</th>
+               	    <th>数能整体</th>
+               	    <th>百度千万级</th>
+               	    <th>数能千万级</th>
+               	    <th>百度亿级</th>
+               	    <th>数能亿级</th>
+           	</thead>
+           	<tbody id="wholeErrorTable">
+           	</tbody>
+	    </table>
+        </div>
+     <br>
+</div>
+<br>
+</div>
+
+<script src="../static/date/date.funcs.js"></script>
+<script src="../static/date_pick/date.pick.funcs.js"></script>
+<script src="../static/wholeBox/basic.function.bak.js"></script>
+
+<div class="yq_div">
+</div>
+<div class="footer">
+</div>
+</body>
+</html>

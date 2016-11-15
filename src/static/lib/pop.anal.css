@@ -1,0 +1,21 @@
+li.feaCate {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+li.feaName {
+    font-size: 10px;
+    margin-bottom: 8px;
+    color:goldenrod;
+}
+
+span.ratingStars {
+    display: inline-block;
+    zoom: 1;
+    background: url(../imgs/small_rating_stars.png) no-repeat;
+    width: 55px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    overflow: hidden;
+}

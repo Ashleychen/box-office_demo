@@ -1,0 +1,185 @@
+rm: cannot remove `boxoffice_day.txt': No such file or directory
+rm: cannot remove `boxoffice_first_day.txt': No such file or directory
+--15:30:01--  http://10.95.36.53:8888/boxoffice_day.txt
+           => `boxoffice_day.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 404 File not found
+15:30:01 ERROR 404: File not found.
+
+--15:30:01--  http://10.95.36.53:8888/boxoffice_day1.txt
+           => `boxoffice_day1.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50,576 (49K) [text/plain]
+
+    0K .......... .......... .......... .......... ......... 100%   96.10 MB/s
+
+15:30:01 (96.10 MB/s) - `boxoffice_day1.txt' saved [50576/50576]
+
+--15:30:01--  http://10.95.36.53:8888/boxoffice_day2.txt
+           => `boxoffice_day2.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 52,036 (51K) [text/plain]
+
+    0K .......... .......... .......... .......... .......... 98%  105.72 MB/s
+   50K                                                       100% 1557.17 GB/s
+
+15:30:01 (107.45 MB/s) - `boxoffice_day2.txt' saved [52036/52036]
+
+--15:30:01--  http://10.95.36.53:8888/total_boxoffice_day.txt
+           => `total_boxoffice_day.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2,806 (2.7K) [text/plain]
+
+    0K ..                                                    100%  330.62 MB/s
+
+15:30:01 (330.62 MB/s) - `total_boxoffice_day.txt' saved [2806/2806]
+
+--15:30:01--  http://10.95.36.53:8888/boxoffice_first_day.txt
+           => `boxoffice_first_day.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 404 File not found
+15:30:01 ERROR 404: File not found.
+
+--15:30:01--  http://10.95.36.53:8888/boxoffice_first_day1.txt
+           => `boxoffice_first_day1.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4,010 (3.9K) [text/plain]
+
+    0K ...                                                   100%  439.37 MB/s
+
+15:30:01 (439.37 MB/s) - `boxoffice_first_day1.txt' saved [4010/4010]
+
+--15:30:01--  http://10.95.36.53:8888/boxoffice_first_day2.txt
+           => `boxoffice_first_day2.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4,145 (4.0K) [text/plain]
+
+    0K ....                                                  100%  429.86 MB/s
+
+15:30:01 (429.86 MB/s) - `boxoffice_first_day2.txt' saved [4145/4145]
+
+--15:30:01--  http://10.95.36.53:8888/nor_seq_num_rate_first_day_single_movie.txt
+           => `nor_seq_num_rate_first_day_single_movie.txt'
+Connecting to 10.95.36.53:8888... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9,446 (9.2K) [text/plain]
+
+    0K .........                                             100%   84.90 MB/s
+
+15:30:01 (84.90 MB/s) - `nor_seq_num_rate_first_day_single_movie.txt' saved [9446/9446]
+
+2
+greppython
+/home/work/liuchu/tools/scmtools/usr/bin/pythondemo_start.py
+24027
+[I 160712 15:33:34 web:1635] 200 GET / (172.20.204.227) 13.38ms
+[I 160712 15:33:35 web:1635] 304 GET /static/bootstrap.min.css (172.20.204.227) 4.78ms
+[I 160712 15:33:35 web:1635] 304 GET /static/index.css (172.20.204.227) 0.71ms
+[I 160712 15:33:35 web:1635] 304 GET /static/jquery-ui.min.css (172.20.204.227) 0.71ms
+[I 160712 15:33:35 web:1635] 304 GET /static/jquery.dataTables.min.css (172.20.204.227) 0.66ms
+[I 160712 15:33:35 web:1635] 304 GET /static/daily.predict.box.error.js (172.20.204.227) 0.62ms
+[I 160712 15:33:37 web:1635] 200 POST / (172.20.204.227) 0.67ms
+[I 160712 15:33:37 web:1635] 200 POST / (172.20.204.227) 16.64ms
+[I 160712 15:34:55 web:1635] 200 GET / (172.20.200.55) 1.59ms
+[I 160712 15:34:56 web:1635] 200 GET /static/bootstrap.min.css (172.20.200.55) 1.31ms
+[I 160712 15:34:56 web:1635] 200 GET /static/index.css (172.20.200.55) 0.56ms
+[I 160712 15:34:56 web:1635] 200 GET /static/index_forcast.css (172.20.200.55) 0.63ms
+[I 160712 15:34:56 web:1635] 200 GET /static/jquery-ui.min.css (172.20.200.55) 0.59ms
+[I 160712 15:34:56 web:1635] 200 GET /static/bootstrap-cerulean.min.css (172.20.200.55) 1.43ms
+[I 160712 15:34:56 web:1635] 200 GET /static/jquery.dataTables.min.css (172.20.200.55) 0.62ms
+[I 160712 15:34:56 web:1635] 200 GET /static/echarts.min.js (172.20.200.55) 4.62ms
+[I 160712 15:34:56 web:1635] 200 GET /static/display.table.js (172.20.200.55) 0.68ms
+[I 160712 15:34:56 web:1635] 200 GET /static/daily.predict.box.error.js (172.20.200.55) 0.56ms
+[I 160712 15:34:56 web:1635] 200 GET /static/basic.function.js (172.20.200.55) 0.60ms
+[I 160712 15:34:56 web:1635] 200 GET /static/trend_chart.js (172.20.200.55) 0.65ms
+[I 160712 15:34:58 web:1635] 200 GET /static/5-150212233308.png (172.20.200.55) 0.95ms
+[I 160712 15:34:58 web:1635] 200 POST / (172.20.200.55) 0.45ms
+[I 160712 15:34:58 web:1635] 200 POST / (172.20.200.55) 16.70ms
+[W 160712 15:34:58 web:1635] 404 GET /favicon.ico (172.20.200.55) 0.69ms
+[W 160712 15:34:58 web:1635] 404 GET /favicon.ico (172.20.200.55) 0.44ms
+[I 160712 15:35:18 web:1635] 200 GET /wholeBox (172.20.200.55) 2.10ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/bootstrap.min.css (172.20.200.55) 2.50ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/index.css (172.20.200.55) 0.66ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/layout.css (172.20.200.55) 0.62ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/jquery-ui.min.css (172.20.200.55) 0.87ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/index_forcast.css (172.20.200.55) 0.65ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/bootstrap-cerulean.min.css (172.20.200.55) 1.49ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/hm.js (172.20.200.55) 0.77ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/jquery.dataTables.min.css (172.20.200.55) 0.70ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/jquery-1.11.1.min.js (172.20.200.55) 1.28ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/jquery.dataTables.js (172.20.200.55) 4.22ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/Xslider.js (172.20.200.55) 0.65ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/global.js (172.20.200.55) 0.63ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/echarts.min.js (172.20.200.55) 4.06ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/bootstrap.min.js (172.20.200.55) 0.83ms
+[I 160712 15:35:18 web:1635] 200 GET /static/wholeBox/jquery-ui.min.js (172.20.200.55) 2.45ms
+[I 160712 15:35:19 web:1635] 200 GET /static/wholeBox/datepicker-zh-cn.js (172.20.200.55) 0.63ms
+[I 160712 15:35:19 web:1635] 200 GET /static/wholeBox/jquery-ui-timepicker-addon.js (172.20.200.55) 1.14ms
+[W 160712 15:35:19 web:1635] 404 GET /static/images/sort_desc.png (172.20.200.55) 0.55ms
+[W 160712 15:35:19 web:1635] 404 GET /static/images/sort_both.png (172.20.200.55) 0.44ms
+[I 160712 15:35:19 web:1635] 200 POST /wholeBox (172.20.200.55) 2.26ms
+[W 160712 15:35:19 web:1635] 404 GET /static/images/sort_asc.png (172.20.200.55) 0.45ms
+[I 160712 15:35:44 web:1635] 200 GET /screening (172.20.200.55) 2.35ms
+[I 160712 15:35:44 web:1635] 200 GET /static/screening/daily.screening.js (172.20.200.55) 0.91ms
+[I 160712 15:35:44 web:1635] 200 GET /static/screening/display.table.js (172.20.200.55) 0.63ms
+[I 160712 15:35:44 web:1635] 200 GET /static/screening/basic.function.js (172.20.200.55) 0.62ms
+[I 160712 15:35:44 web:1635] 200 GET /static/screening/screening.chart.js (172.20.200.55) 0.66ms
+[I 160712 15:35:45 web:1635] 200 POST /screening (172.20.200.55) 0.53ms
+[I 160712 15:35:45 web:1635] 200 POST /screening (172.20.200.55) 0.51ms
+[I 160712 15:36:03 web:1635] 200 GET /screening (172.20.200.55) 0.73ms
+[I 160712 15:36:03 web:1635] 200 POST /screening (172.20.200.55) 0.62ms
+[I 160712 15:36:03 web:1635] 200 POST /screening (172.20.200.55) 0.51ms
+[I 160712 15:36:07 web:1635] 200 GET / (172.20.200.55) 1.61ms
+[I 160712 15:36:08 web:1635] 200 POST / (172.20.200.55) 0.63ms
+[I 160712 15:36:08 web:1635] 200 POST / (172.20.200.55) 16.16ms
+[W 160712 15:36:35 web:1635] 404 GET /static/images/ui-bg_inset-hard_100_fcfdfd_1x100.png (172.20.200.55) 0.66ms
+[W 160712 15:36:35 web:1635] 404 GET /static/images/ui-icons_d8e7f3_256x240.png (172.20.200.55) 0.45ms
+[W 160712 15:36:35 web:1635] 404 GET /static/images/ui-bg_gloss-wave_75_2191c0_500x100.png (172.20.200.55) 0.45ms
+[W 160712 15:36:35 web:1635] 404 GET /static/images/ui-bg_glass_45_0078ae_1x400.png (172.20.200.55) 0.44ms
+[W 160712 15:36:35 web:1635] 404 GET /static/images/ui-bg_glass_55_f8da4e_1x400.png (172.20.200.55) 0.43ms
+[W 160712 15:36:36 web:1635] 404 GET /static/images/ui-bg_glass_75_79c9ec_1x400.png (172.20.200.55) 0.65ms
+[I 160712 15:36:36 web:1635] 200 POST / (172.20.200.55) 16.61ms
+[I 160712 15:39:37 web:1635] 200 GET / (172.20.206.255) 1.59ms
+[I 160712 15:39:37 web:1635] 200 GET /static/bootstrap.min.css (172.20.206.255) 1.55ms
+[I 160712 15:39:37 web:1635] 200 GET /static/index.css (172.20.206.255) 0.61ms
+[I 160712 15:39:37 web:1635] 200 GET /static/index_forcast.css (172.20.206.255) 0.61ms
+[I 160712 15:39:37 web:1635] 200 GET /static/jquery-ui.min.css (172.20.206.255) 0.62ms
+[I 160712 15:39:37 web:1635] 200 GET /static/bootstrap-cerulean.min.css (172.20.206.255) 0.77ms
+[I 160712 15:39:37 web:1635] 200 GET /static/jquery.dataTables.min.css (172.20.206.255) 0.60ms
+[I 160712 15:39:37 web:1635] 304 GET /static/echarts.min.js (172.20.206.255) 0.52ms
+[I 160712 15:39:37 web:1635] 200 GET /static/daily.predict.box.error.js (172.20.206.255) 0.64ms
+[I 160712 15:39:37 web:1635] 304 GET /static/basic.function.js (172.20.206.255) 0.52ms
+[I 160712 15:39:37 web:1635] 304 GET /static/display.table.js (172.20.206.255) 0.62ms
+[I 160712 15:39:37 web:1635] 304 GET /static/trend_chart.js (172.20.206.255) 0.51ms
+[I 160712 15:39:40 web:1635] 200 GET /static/5-150212233308.png (172.20.206.255) 0.85ms
+[I 160712 15:39:40 web:1635] 200 POST / (172.20.206.255) 0.49ms
+[I 160712 15:39:40 web:1635] 200 POST / (172.20.206.255) 16.25ms
+[W 160712 15:39:40 web:1635] 404 GET /static/images/ui-bg_inset-hard_100_fcfdfd_1x100.png (172.20.206.255) 0.51ms
+[W 160712 15:39:40 web:1635] 404 GET /favicon.ico (172.20.206.255) 0.50ms
+[I 160712 15:39:59 web:1635] 200 POST / (172.20.206.255) 16.47ms
+[I 160712 15:40:02 web:1635] 200 POST / (172.20.206.255) 16.37ms
+[I 160712 15:40:19 web:1635] 200 POST / (172.20.206.255) 16.41ms
+[I 160712 15:40:20 web:1635] 200 POST / (172.20.206.255) 16.35ms
+[I 160712 15:40:23 web:1635] 200 GET / (172.20.204.227) 1.56ms
+[I 160712 15:40:24 web:1635] 304 GET /static/bootstrap.min.css (172.20.204.227) 0.61ms
+[I 160712 15:40:24 web:1635] 304 GET /static/index.css (172.20.204.227) 0.50ms
+[I 160712 15:40:24 web:1635] 304 GET /static/index_forcast.css (172.20.204.227) 0.55ms
+[I 160712 15:40:24 web:1635] 304 GET /static/jquery-ui.min.css (172.20.204.227) 0.51ms
+[I 160712 15:40:24 web:1635] 304 GET /static/bootstrap-cerulean.min.css (172.20.204.227) 0.50ms
+[I 160712 15:40:24 web:1635] 304 GET /static/jquery.dataTables.min.css (172.20.204.227) 0.79ms
+[I 160712 15:40:24 web:1635] 304 GET /static/echarts.min.js (172.20.204.227) 0.50ms
+[I 160712 15:40:24 web:1635] 304 GET /static/basic.function.js (172.20.204.227) 0.75ms
+[I 160712 15:40:24 web:1635] 200 GET /static/daily.predict.box.error.js (172.20.204.227) 0.87ms
+[I 160712 15:40:24 web:1635] 304 GET /static/display.table.js (172.20.204.227) 0.52ms
+[I 160712 15:40:24 web:1635] 304 GET /static/trend_chart.js (172.20.204.227) 0.76ms
+[I 160712 15:40:28 web:1635] 200 GET /static/5-150212233308.png (172.20.204.227) 0.83ms
+[I 160712 15:40:28 web:1635] 200 POST / (172.20.204.227) 3.99ms
+[W 160712 15:40:28 web:1635] 404 GET /favicon.ico (172.20.204.227) 0.47ms
+[W 160712 15:40:28 web:1635] 404 GET /static/images/ui-bg_inset-hard_100_fcfdfd_1x100.png (172.20.204.227) 0.45ms
+[I 160712 15:40:28 web:1635] 200 POST / (172.20.204.227) 55.61ms
+demo_restart.sh: line 37: 12015 Terminated              nohup ~/liuchu/tools/scmtools/usr/bin/python demo_start.py

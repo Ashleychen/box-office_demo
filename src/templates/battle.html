@@ -1,0 +1,174 @@
+<!DOCTYPE table Public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>票房晚报</title>
+<meta name="baidu-site-verification" content="PlKNuB5N14" />
+<meta name="description" content="电影票房预测">
+<meta name="keywords" content="电影票房预测">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../static/lib/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../static/lib/index.css" />
+<link rel="stylesheet" type="text/css" href="../static/lib/index_forcast.css"/>
+<link rel="stylesheet" href="../static/lib/jquery-ui.min.css">
+<link id="bs-css" href="../static/lib/bootstrap-cerulean.min.css" rel="stylesheet">
+<link id="bs-css" href="../static/lib/jquery.dataTables.min.css" rel="stylesheet">
+
+<script src="http://piaofang.snbigdata.com/Public/js/jquery-1.11.1.min.js"></script>
+<script src="http://piaofang.snbigdata.com/Public/js/jquery.dataTables.js"></script>
+
+
+
+<script src="http://piaofang.snbigdata.com/Public/js/Xslider.js"></script>
+
+<script src="../static/lib/global.js"></script>
+<script src="http://piaofang.snbigdata.com/Public/js/echarts/echarts.min.js"></script>
+<script src="../static/lib/echarts.min.js"></script>
+<script src="http://piaofang.snbigdata.com/Public/Bootstrap3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/lib/moment.min.js"></script>
+<script src="http://piaofang.snbigdata.com/Public/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="http://piaofang.snbigdata.com/Public/jquery-ui-1.11.2/datepicker-zh-cn.js"></script>
+<script type="text/javascript"	src="http://piaofang.snbigdata.com/Public/jquery-ui-1.11.2/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="../static/lib/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/lib/daterangepicker.css" />
+<script src="../static/lib/layer/layer.js"></script>
+<script src="../static/date/date.funcs.js"></script>
+<script src="../static/date_pick/date.pick.funcs.js"></script>
+<script src="../static/table/table.format.js"></script>
+<script src="../static/chart/chart.format.js"></script>
+<script src="../static/chart/chart.options.js"></script>
+<script src="../static/pop/pop.format.js"></script>
+<style type="text/css">
+body{
+font-family:'微软雅黑','宋体';
+}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?416b9af87687a008381d0a070a8267f4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+ 
+<body>
+<div style="background-color:#ff9966;width:100%;min-width:1045px">
+    <div  class="forecast1" style='margin:auto auto;width:1045px'>
+        <ul class="nav nav-tabs forecast"  style="font-size:large">
+            <li role="presentation" ><a   href="http://10.199.242.43:8000/">每日预测</a></li>
+            <li role="presentation" ><a   href="http://10.199.242.43:8000/wholeBox">总票房预测</a></li>
+            <li role="presentation" ><a   href="http://10.199.242.43:8000/week">周票房预测</a></li>
+            <li role="presentation" class="active"><a   href="http://10.199.242.43:8000/battle">巅峰对决</a></li>
+	    <li role="presentation"><a   href="http://10.199.242.43:8000/deep">影片深度分析</a></li>
+        </ul>
+    </div>
+</div>
+
+<div  style="width:100%;min-width:1045px;background: url(../static/imgs/5-150212233308.png) repeat; width:medium;text-align:center">
+    <br/>
+    <div class="div_margin" style="width:1040px;">
+        <br/>   
+        <div class="title_one"><span style="font-size:28px;color:white;" >日票房预测战绩比分</span>
+        </div>	     	  
+        <div class="choose_forcast_d" style="background-color:white;">
+            <div style="background-color:white;height:32px;width:20%;text-align:center;line-height:2.4;float:left" ><a  id="pre_d"  class="pre_d" href="javascript:void(0);"   >&lt;前一天</a></div>
+            <div style="background-color:white;width:60%;text-align:center;float:left" >
+                <span  class="col-sm-6 date-con text-right">发布日期：</span><input style="font-size:15;height:32px" readOnly id="battle" type="text" class=" datep col-sm-4">
+            </div>
+            <div  style="background-color:white;height:32px;width:20%;text-align:center;line-height:2.4;float:left"><a  id="aft_d"  class="aft_d"  href="javascript:void(0);"    >后一天&gt;</a></div>
+        </div>
+              
+        <table class="table table-striped table-border table-hover forcast text-center back_color_w">
+            <thead class="font_color_b">
+                <th class="text-center">电影名</th>
+		<th class="text-center">百度预测(万)</th>
+		<th class="text-center">百度误差(万)</th>
+		<th class="text-center">数能预测(万)</th>
+		<th class="text-center">数能误差(万)</th>
+		<th class="text-center">实际票房(万)</th>
+		<th class="text-center">得分胜负</th>
+                <th class="text-center">排片率(%)</th>
+            </thead>
+            <tbody id="battle_table">
+            </tbody>
+        </table>
+        <div style="margin:auto;margin-top:-20px;font-family:Verdana,Arial,Helvetica,sans-serif;line-height:1.8;font-size:15px;background:#1abc9c;color:#222;padding:0.6em;">
+            <div id="winner" style="margin:0;border:0;background:transparent;padding:0;vertical-align:baseline">
+	    	winner
+	    </div>
+	</div>
+	<div style="margin:auto;background-color:#d9534f;height:52px;padding:10px 0">
+	    <div style="width:40%;float:left">
+		<span  class="col-sm-6 date-con text-right">日期范围：</span><input style="font-size:15;height:32px" size="26" readOnly id="date_range" type="text">
+	    </div>
+	    <div id="bdScore" style="width:30%;float:left;line-height:32px">
+		test1
+	    </div>
+	    <div id="shunengScore" style="width:30%;float:left;line-height:32px">
+		test2
+	    </div>
+	</div>
+        <div style="margin:auto;font-family:Verdana,Arial,Helvetica,sans-serif;line-height:1.8;font-size:15px;background:#ffffcc;color:#222;padding:0.6em;">
+            <div style="margin:0;border:0;background:transparent;padding:0;vertical-align:baseline">
+		1、周票房第一的单片预测值与相应统计值误差小的一方得5分，周票房第二的单片预测值与相应统计值误差小的一方得4分，以此类推。
+	    	<br/>
+		2、 如遇双方的票房预测值相同，率先在微信公众号发布预测信息的一方得分。
+	    	<br/>
+		3、如预测方对某一部周排名前五的影片没有进行预测，则该片得分为零。
+	    	<br/>
+		4、根据每周双方的得分情况，总分高（五部单片的总得分）的一方获胜。
+            </div>
+        </div>
+    </div> 
+    <script src="../static/battle/display.table.js"></script>
+    <br/>
+    <div class="div_margin" style="width:1040px;">
+	<div style="background-color:#f3b39e;color:#ffffff;text-align:center"><span style="font-size:28px;color:white;" >百度数能误差对比</span></div>
+	<div style="margin:auto;background-color:white;height:52px;padding:10px 0">
+	    <div style="width:70%;">
+		<span  class="col-sm-6 date-con text-right">日期范围：</span><input style="font-size:15;height:32px" size="26" readOnly id="err_range" type="text">
+	    </div>
+	</div>
+        <table class="table table-striped table-border table-hover forcast text-center back_color_w" >
+            <thead class="font_color_b">
+                <th class="text-center" style="color:#2fa4e7">票房类别</th>
+                <th class="text-center">大盘误差</th>
+                <th class="text-center">TOP5误差</th>
+                <th class="text-center">首日TOP5误差</th>
+                <th class="text-center">非首日TOP5误差</th>
+                <th class="text-center">整体误差</th>
+                <th class="text-center">首日整体误差</th>
+                <th class="text-center">非首日整体误差</th>
+            </thead>
+            <tbody id="battleErr">
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    <div style="width:1040px;margin:auto">
+    	<div style="margin:auto;margin-right:9%;width:60%;height:400px;display:inline-block;vertical-align:middle;background-color:white;">
+            <div id="aveLine" style="margin:auto;width:100%;height:100%;display:inline-block;">
+            </div>
+    	</div>
+	<div style="width:30%;height:auto;vertical-align:middle;margin:auto;display:inline-block">
+            <div style="background-color:#f3b39e;color:#ffffff;text-align:center"><span id="aveDiv" style="font-size:18px;color:white;">Moving Average</span></div>
+            <table class="table table-striped table-border table-hover text-center back_color_w" style="font-size:12px">
+                <thead class="font_color_b">
+                    <th class="text-center" style="font-size:13px">日期</th>
+                    <th class="text-center" style="font-size:13px">rate</th>
+                </thead>
+                <tbody id="aveTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class='yq_div' style="width:100%;min-width:1045px">
+</div>
+<div class="footer" style="width:100%;min-width:1045px">
+</div>
+</div>
+</body>
+</html>

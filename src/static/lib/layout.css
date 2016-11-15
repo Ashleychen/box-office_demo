@@ -1,0 +1,97 @@
+.bg_picture2{
+    background: url(http://piaofang.snbigdata.com/Public/images/forecast/back.png) repeat;width:medium;
+}
+#lishi{
+    margin:auto auto;width:800px;font-size:16px
+}
+.bg1{
+    margin:auto auto;font-size:20px;background-color:white;width:1040px
+}
+.temp{
+    margin-left:150px;width:600px
+}
+.temp1{
+    margin-left:4%;font-size:20px;
+}
+.search{
+    margin:auto auto;width:92%;
+}
+
+ul,p{margin:1px; padding:0;}
+li{list-style-type:none;}
+img{border:0;}
+
+a:link,a:visited{color:#333; text-decoration:none;}
+a:hover{color:#000;}
+
+a.abtn{
+        position:absolute;
+        top:54px;
+        display:block;
+        height:32px;
+        width:6px;
+        overflow:hidden;
+        text-indent:-20000px;
+        background:url(http://piaofang.snbigdata.com/Public/images/calendar/arrow3.gif) 0px center no-repeat;
+}
+a.aleft{
+        left:7px;
+}
+a.agrayleft{
+        cursor:default;
+        background-position:-12px center;
+}
+a.aright{
+        right:7px;
+        background-position:-6px center;
+}
+a.agrayright{
+        cursor:default;
+        background-position:-18px center;
+}
+
+.productshow{
+        width:800px;
+        height:132px;
+        padding:4px 0;
+        margin:10px auto;
+        position:relative;
+        text-align:center;
+        font-family:微软雅黑, 黑体;
+
+}
+.productshow .scrollcontainer{
+        width:800px;
+        height:200px;
+        overflow:hidden;
+        position:relative;
+        margin:0 auto;
+}
+.productshow .scrollcontainer ul{
+        width:20000px;
+        position:absolute;
+        left:0px;
+        top:0px;
+}
+.productshow .scrollcontainer li{
+        float:left;
+        width:162px;
+        height:130px;
+        text-align:center;
+}
+.productshow .scrollcontainer li.last{
+        background:none;
+}
+.productshow .scrollcontainer li div{
+        height:95px;
+        width:162px;
+        overflow:hidden;
+        text-align:center;
+}
+.productshow .scrollcontainer a:hover img{
+        filter:alpha(opacity=86);-moz-opacity:0.86;opacity:0.86;
+}
+.productshow .scrollcontainer li p{
+        margin:0;
+        line-height:32px;
+}
